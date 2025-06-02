@@ -3,7 +3,7 @@ name: Test Package
 on:
   push:
     branches:
-      - main  # Change to your default branch
+      - dev  # Change to your default branch
   pull_request:
 
 jobs:
