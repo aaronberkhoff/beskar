@@ -1,0 +1,40 @@
+[project]
+name = "beskar"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "aaronberkhoff",email = "aaronberkhoff@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4"
+dependencies = [
+    "numpy (>=2.2.6,<3.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "h5py (>=3.13.0,<4.0.0)",
+    "tables (>=3.10.2,<4.0.0)",
+    "cartopy (>=0.24.1,<0.25.0)",
+    "trimesh (>=4.6.10,<5.0.0)",
+    "spiceypy (>=6.0.0,<7.0.0)",
+    "click (>=8.2.1,<9.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "beskar", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+flake8 = "^7.2.0"
+pytest = "^8.3.5"
+mypy = "^1.16.0"
+pre-commit = "^4.2.0"
+coverage = "^7.8.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
